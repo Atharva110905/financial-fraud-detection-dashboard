@@ -1,0 +1,9 @@
+# Large files and artifacts
+*.db
+*.csv
+artifacts/
+*.pkl
+*.joblib
+*.h5
+__pycache__/
+.streamlit/
