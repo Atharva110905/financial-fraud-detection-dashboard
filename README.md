@@ -1,5 +1,12 @@
 # Financial Fraud Detection Model & Dashboard
 
+## Quick Start
+1. Clone repo
+2. `pip install -r requirements.txt`
+3. `python generate_dataset.py` — regenerates synthetic data
+4. `python etl_pipeline.py` — creates fraud_detection.db
+5. `python train_models.py` — trains all 7 models (optional, pre-trained artifacts included locally)
+6. `streamlit run app.py`
 ## How to run
 1. Install dependencies: `pip install -r requirements.txt`
 2. (Optional — already done) Regenerate data: `python generate_dataset.py`
