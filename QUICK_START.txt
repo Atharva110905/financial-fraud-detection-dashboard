@@ -1,0 +1,84 @@
+═══════════════════════════════════════════════════════════════════════════════
+  💡 FRAUD DETECTION DASHBOARD - QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+⚡ FASTEST WAY TO RUN (One-Time Setup)
+────────────────────────────────────────────────────────────────────────────────
+
+1️⃣  First Time Only - Install Dependencies:
+   
+    Open Command Prompt (cmd) in this folder and type:
+    
+    python -m pip install -r requirements.txt
+    
+    Then wait for it to finish (1-2 minutes).
+
+2️⃣  Create Desktop Shortcut (Optional but Recommended):
+
+    Double-click:  CREATE_DESKTOP_SHORTCUT.vbs
+    
+    ✅ This creates a shortcut on your Desktop that you can use forever.
+       Just double-click it to launch the dashboard anytime!
+
+3️⃣  Run the Dashboard:
+
+    Option A: Double-click  RUN_DASHBOARD.bat  (Easiest ✨)
+    Option B: Double-click  RUN_DASHBOARD.ps1  (Modern)
+    Option C: Use Desktop shortcut (if you created one)
+
+    💻 Your browser will open automatically at http://localhost:8501
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 FILES EXPLAINED
+────────────────────────────────────────────────────────────────────────────────
+
+RUN_DASHBOARD.bat
+  → Windows batch file. Double-click to launch. Simplest method.
+  → Opens Command Prompt, then Streamlit, then your browser.
+  
+RUN_DASHBOARD.ps1
+  → PowerShell script. Modern, cleaner output.
+  → Run with: Right-click → Run with PowerShell
+  
+CREATE_DESKTOP_SHORTCUT.vbs
+  → Creates a desktop icon (📊 Fraud Detection Dashboard)
+  → Run once, then use the desktop shortcut forever.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ TROUBLESHOOTING
+────────────────────────────────────────────────────────────────────────────────
+
+❌ "Python not found" or "Streamlit not found"
+   → Make sure you ran:  python -m pip install -r requirements.txt
+   → If still failing, open cmd here and try:
+      C:\Users\Atharva More\anaconda3\python.exe -m streamlit run app.py
+
+❌ "Port 8501 already in use"
+   → Another app is using that port. Either:
+     • Close other instances of the dashboard
+     • Or change port in RUN_DASHBOARD.bat to 8502, 8503, etc.
+     
+     Change this line:
+     python -m streamlit run app.py
+     
+     To:
+     python -m streamlit run app.py --server.port 8502
+
+❌ Dashboard won't open in browser
+   → Manually visit:  http://localhost:8501
+   → If that doesn't work, check Command Prompt window for errors.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 QUICK SUMMARY
+────────────────────────────────────────────────────────────────────────────────
+
+Step 1: pip install -r requirements.txt          (Install once)
+Step 2: Double-click RUN_DASHBOARD.bat           (Every time)
+Step 3: Dashboard opens in browser               (Automatic)
+
+That's it! No command prompt needed after setup.
+
+═══════════════════════════════════════════════════════════════════════════════

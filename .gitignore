@@ -1,0 +1,40 @@
+# Large data files (users can regenerate)
+fraud_transactions.csv    # Large CSV - regenerate with generate_dataset.py
+*.pkl                      # Old model formats
+*.joblib
+*.h5
+
+# Keep these (needed for app):
+# fraud_detection.db     - DO NOT IGNORE - needed for dashboard
+# artifacts/             - DO NOT IGNORE - trained models
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Streamlit cache
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# Environment
+.env
+.venv
+env/
+
+# OS files
+Thumbs.db
+.cache
